@@ -44,7 +44,7 @@ public class GreenUpBehavior : MonoBehaviour
       if (Input.GetKeyDown(KeyCode.M))
       {
          mFollowMousePosition = !mFollowMousePosition;
-         UpdateGameControl();
+         //UpdateGameControl();
       }
 
    
@@ -131,17 +131,17 @@ public class GreenUpBehavior : MonoBehaviour
       Debug.Log("Plane On CollisionStay");
    }
 
-   private void UpdateGameControl()
-   {
-      if(mFollowMousePosition == true)
-      {
-         mGameControlText.text = "Hero Control Mode: Follow Mouse Position";
-      }
-      else
-      {
-         mGameControlText.text = "Hero Control Mode: Keyboard Mode";
-      }
-   }
+   // private void UpdateGameControl()
+   // {
+   //    if(mFollowMousePosition == true)
+   //    {
+   //       mGameControlText.text = "Hero Control Mode: Follow Mouse Position";
+   //    }
+   //    else
+   //    {
+   //       mGameControlText.text = "Hero Control Mode: Keyboard Mode";
+   //    }
+   // }
 
 }
 
